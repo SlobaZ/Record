@@ -1,0 +1,193 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.row{
+	padding:10px;
+}
+.searchP{
+	font-size:1.5vw;
+}
+.listP{
+	font-size:2vw;
+}
+
+
+table{
+	font-size: 1.2vw;
+}
+thead {
+  background: linear-gradient(#33CCFF , #006699 45% 55% , #33CCFF );
+  color: white;
+} 
+thead:hover {
+  background: linear-gradient(#006699 , #33CCFF 47% 53% , #006699 );
+  text-shadow: 1px 1px #900000;
+}
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+  background: linear-gradient(white , #fcfcfc 47% 53% , white );
+}
+ .table-hover tbody tr:hover td, 
+ .table-hover tbody tr:hover th {
+  background: linear-gradient(#e6e6e6 , #F0FFFF 45% 55% , #e6e6e6 );color:black;
+  text-shadow: 1px 0.5px black;  
+}
+.fixno{
+	width:18%;
+}
+
+.btn {
+    padding: 6px 8px;
+    font-size: 1.3vw;
+    letter-spacing: 1px;
+    font-weight:bold;
+    border: 1px solid black;  
+}
+
+.btn-search{
+	color: white;
+	background: linear-gradient(lightgray , #505050 45% 55% , lightgray );
+}
+.btn-search:hover{
+	color: black;
+	background: linear-gradient(gray , white 45% 55% , gray);
+	border: 1px solid black;
+}
+.btn-add{
+	color: white; 
+	background: linear-gradient(#66FF00 , #003300 45% 55% , #66FF00 );
+}
+.btn-add:hover{
+	color: black;
+	background: linear-gradient(#009900 , white 45% 55%, #009900 );
+	border: 1px solid black;
+}
+.btn-select{
+	color: white;
+	background: linear-gradient(#00CC99 , #006699 45% 55% , #00CC99 );
+}
+.btn-select:hover{
+	color: black;
+	background: linear-gradient(#00CC99 , white 45% 55% , #00CC99 );
+	border: 1px solid black;
+}
+.btn-update{
+	color: white;
+	background: linear-gradient(#33CCFF , #006699 45% 55% , #33CCFF );
+	margin-left: 10px
+}
+.btn-update:hover{
+	color: black;
+	background: linear-gradient(#006699 , white 45% 55% , #006699 );
+	border: 1px solid black;
+}
+.btn-delete{
+	color: white;
+	background: linear-gradient(#FF3300 , #990033 45% 55% , #FF3300 );
+	margin-left: 10px
+}
+.btn-delete:hover{
+	color: black;
+	background: linear-gradient(#FF0033 , white 45% 55% , #FF0033 );
+	border: 1px solid black;
+}
+.btn-submit{
+	color: white;
+	background: linear-gradient(#33CCFF , #006699 45% 55% , #33CCFF );
+}
+.btn-submit:hover{
+	color: black; 
+	background: linear-gradient(#006699 , white 45% 55% , #006699 );
+	border: 1px solid black;
+	box-shadow: 3px 3px #ccc;
+}
+
+.createupdateP{
+	margin-top:20px;
+	font-size:1.5vw;
+}
+.fixno{
+	width:20%;
+}
+
+
+/*    */
+
+@media screen and (min-width: 1401px) and (max-width: 1700px) {
+.row{
+	padding:8px;
+}
+table{
+	font-size: 1vw;
+}
+.btn {
+    padding: 5px 10px;
+    letter-spacing: 0.75px;
+    font-size: 1.1vw;
+}
+
+}
+
+
+/*    */
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+.row{
+	padding:7px;
+}
+.btn {
+    padding: 5px 8px;
+    letter-spacing: 0.75px;
+    font-size: 1.1vw;
+}
+table{
+	font-size: 0.9vw;
+}
+
+}
+
+
+/*    */
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+.row{
+	padding:6px;
+}
+.btn {
+    padding: 4px 6px;
+    letter-spacing: 0.5px;
+    font-size: 1vw;
+}
+table{
+	font-size: 0.85vw;
+}
+.fixno{
+	width:20%;
+}
+
+}
+
+
+
+/*   */ 
+
+@media screen and (max-width: 767px) {
+.btn {
+    padding: 2px 2px;
+    letter-spacing: 0.2px;
+    font-size: 0.8vw;
+}
+.btn-update{
+	margin-left: 5px
+}
+.btn-delete{
+	margin-left: 5px
+}
+table{
+	font-size: 0.8vw;
+}
+.fixno{
+	width:20%;
+}
+}
+

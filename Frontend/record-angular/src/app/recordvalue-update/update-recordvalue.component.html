@@ -1,0 +1,87 @@
+<div class="col-md-8 offset-md-2" *ngIf="showUser">
+<form>
+
+<div class="row">
+    <p class="createupdateP"> Update {{recordtype.name}} </p>
+</div>
+
+<div class="row"> 
+    
+        <div class="col-4" *ngIf="recordtype.name">
+            <label> {{recordtype.name}} </label>
+            <input type="text" class ="form-control" id = "name"
+                [(ngModel)] = "recordvalue.name" name = "name">
+        </div>
+</div>
+
+<div class="row">         
+        <div class="col-4" *ngIf="recordtype.column1">
+            <label> {{recordtype.column1}} </label>
+            <input type="text" class ="form-control" id = "column1"
+                [(ngModel)] = "recordvalue.column1" name = "column1">
+        </div>
+        
+        <div class="col-4" *ngIf="recordtype.column2">
+            <label> {{recordtype.column2}} </label>
+            <input type="text" class ="form-control" id = "column2"
+                [(ngModel)] = "recordvalue.column2" name = "column2">
+        </div>
+        
+        <div class="col-4" *ngIf="recordtype.column3">
+            <label> {{recordtype.column3}} </label>
+            <input type="text" class ="form-control" id = "column3"
+                [(ngModel)] = "recordvalue.column3" name = "column3">
+        </div>
+</div>
+
+<div class="row">     
+        <div class="col-4" *ngIf="recordtype.column4">
+            <label> {{recordtype.column4}} </label>
+            <input type="text" class ="form-control" id = "column4"
+                [(ngModel)] = "recordvalue.column4" name = "column4">
+        </div>
+    
+        <div class="col-4" *ngIf="recordtype.column5">
+            <label> {{recordtype.column5}} </label>
+            <input type="text" class ="form-control" id = "column5"
+                [(ngModel)] = "recordvalue.column5" name = "column5">
+        </div>
+        
+        <div class="col-4" *ngIf="recordtype.column6">
+            <label> {{recordtype.column6}} </label>
+            <input type="text" class ="form-control" id = "column6"
+                [(ngModel)] = "recordvalue.column6" name = "column6">
+        </div>
+ </div>
+ 
+ <div class="row">        
+        <div class="col-4" *ngIf="recordtype.column7">
+            <label> {{recordtype.column7}} </label>
+            <input type="text" class ="form-control" id = "column7"
+                [(ngModel)] = "recordvalue.column7" name = "column7">
+        </div>
+        
+        <div class="col-4" *ngIf="recordtype.column8">
+            <label> {{recordtype.column8}} </label>
+            <input type="text" class ="form-control" id = "column8"
+                [(ngModel)] = "recordvalue.column8" name = "column8">
+        </div>
+        
+        <div class="col-4" *ngIf="recordtype.column9">
+            <label> {{recordtype.column9}} </label>
+            <input type="text" class ="form-control" id = "column9"
+                [(ngModel)] = "recordvalue.column9" name = "column9">
+        </div>
+</div>
+ 
+    <br>
+<div class="row">    
+    <div class="form-group">
+        <button (click) = "onSubmit()"  class = "btn btn-submit" > <i class='fas fa-sd-card'></i> Submit</button>
+        <button (click) = "cancel()"  class = "btn btn-delete" style="margin-left: 50px"> <i class='fas fa-undo-alt'></i> Cancel</button>
+	</div>
+</div>
+<br>
+<br>
+</form>
+</div>

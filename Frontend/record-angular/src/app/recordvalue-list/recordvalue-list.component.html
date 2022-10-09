@@ -1,0 +1,63 @@
+<br>
+<div class="col-md-12 offset-md-0" *ngIf="showUser">
+	<div class="row">
+		<div class="col-3">
+			<p class="listP"> {{recordtype.name}} List</p>
+		</div>
+		<div class="col-2 offset-md-1">
+			<button (click) = "addRecordValue()" class = "btn btn-add" *ngIf="showUser" > <i class='fas fa-plus'></i> Add new</button>
+		</div>
+		<div class="col-3 offset-md-1">
+			<input  type="text" class="form-control" placeholder="Search by name" [(ngModel)]="name" />
+		</div>
+		<div class="col-2">
+			<button class="btn btn-search" type="button" (click)="searchRecordValues()" > <i class='fas fa-search'></i> Search </button>
+		</div>
+	</div>
+</div>
+
+
+<div class="table-responsive" *ngIf="showUser" >
+<table class = "table table-striped table-bordered table-hover">  
+    <thead>
+        <tr>
+            <th *ngIf="recordtype.id"> {{recordtype.id}} </th>
+            <th *ngIf="recordtype.name"> {{recordtype.name}} </th>
+            <th *ngIf="recordtype.column1"> {{recordtype.column1}} </th>
+            <th *ngIf="recordtype.column2"> {{recordtype.column2}} </th>
+            <th *ngIf="recordtype.column3"> {{recordtype.column3}} </th>
+            <th *ngIf="recordtype.column4"> {{recordtype.column4}} </th>
+            <th *ngIf="recordtype.column5"> {{recordtype.column5}} </th>
+            <th *ngIf="recordtype.column6"> {{recordtype.column6}} </th>
+            <th *ngIf="recordtype.column7"> {{recordtype.column7}} </th>
+            <th *ngIf="recordtype.column8"> {{recordtype.column8}} </th>
+            <th *ngIf="recordtype.column9"> {{recordtype.column9}} </th>
+            <th  class="fixno"> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let recordvalue of recordvalues" >
+            <td *ngIf="recordtype.id"> {{ recordvalue.id }} </td>
+            <td *ngIf="recordtype.name"> {{ recordvalue.name }} </td>
+            <td *ngIf="recordtype.column1"> {{ recordvalue.column1 }} </td>
+            <td *ngIf="recordtype.column2"> {{ recordvalue.column2 }} </td>
+            <td *ngIf="recordtype.column3"> {{ recordvalue.column3 }} </td>
+            <td *ngIf="recordtype.column4"> {{ recordvalue.column4 }} </td>
+            <td *ngIf="recordtype.column5"> {{ recordvalue.column5 }} </td>
+            <td *ngIf="recordtype.column6"> {{ recordvalue.column6 }} </td>
+            <td *ngIf="recordtype.column7"> {{ recordvalue.column7 }} </td>
+            <td *ngIf="recordtype.column8"> {{ recordvalue.column8 }} </td>
+            <td *ngIf="recordtype.column9"> {{ recordvalue.column9 }} </td>
+            <td>
+                <button (click) = "updateRecordValue(recordvalue.id)" class = "btn btn-update" *ngIf="showUser"> <i class='fas fa-pencil-alt'></i> Update</button>
+                <button (click) = "deleteRecordValue(recordvalue.id)" class = "btn btn-delete" style="margin-left: 10px" *ngIf="showUser"> <i class='fas fa-trash-alt'></i> Delete</button>
+            </td>          
+        </tr>
+    </tbody>
+</table>
+<br>
+<button class="btn btn-search" type="button" (click)="excel()" *ngIf="showUser"> <i class='fas fa-file-excel'></i> Excel </button>
+<br>
+<br>
+<br>
+</div>

@@ -1,0 +1,141 @@
+.navbar{
+	position: fixed;
+    top: 0;
+    width:100%;
+    height:7%;
+    z-index: 1;
+	border: 1px solid red;
+	color: white;
+	background: linear-gradient(#33CCFF , #006699 45% 55% , #33CCFF );
+}
+.navbar:hover{
+	border: 1px solid red;
+	color: white;
+	background: linear-gradient(#006699 , #33CCFF 47% 53% , #006699 );
+}
+.logo {
+  margin-left:1%;
+}
+.logo img {
+	width:50px; 
+	height:50px;
+}
+.logo:hover {
+	opacity:75%;
+}
+.navbar a {
+    color:  white;
+}
+.navbar a:hover {
+    color: #888888;  
+    text-shadow: 1px 1px #900000;
+}
+.navbar a:active {
+    color: red;      
+    text-shadow: 1px 1px #900000;
+}
+
+.navbar-nav {
+  width: max-content; 
+}
+.nav-item {
+  width: max-content;  
+}
+.nav-link{
+  width: max-content; 
+  font-size: 1.5vw;
+}
+
+.btn-exit {
+    padding: 6px 8px;
+    font-size: 1.3vw;
+    letter-spacing: 1px;
+    font-weight:bold;
+    color: white;
+	background: linear-gradient(#33CCFF , #006699 45% 55% , #33CCFF );
+    border: 1px solid black;  
+}
+.btn-exit:hover{
+	color: black;
+	background: linear-gradient(#006699 , white 45% 55% , #006699 );
+	border: 1px solid black;
+}
+
+#screensize {
+	margin-left:2.5%;
+	margin-top:3.5%;
+	width:95%;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    z-index: 1;
+    border: 1px solid red;
+	background: linear-gradient(#33CCFF , #006699 45% 55% , #33CCFF );
+ }
+ .footer:hover{
+	background: linear-gradient(#006699 , #33CCFF 47% 53% , #006699 );
+}
+ .footerLogo{
+ 	float:left;
+    margin-left: 1%;
+    height:100%;
+    width:90%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+ }
+ .footerLogo img{
+    height: 98%;
+ }
+ .footerLogo p{
+    margin-left: 10%;
+ }
+ 
+ 
+  /*   */ 
+ 
+@media screen and (min-width: 768px) and (max-width: 1700px) {
+.nav-link{
+  font-size: 1.3vw;
+}
+.btn-exit {
+    padding: 5px 10px;
+    letter-spacing: 0.75px;
+    font-size: 1.1vw;
+}
+#screensize {
+	margin-top:3.8%;
+}
+}
+ 
+ 
+ /*   */ 
+
+@media screen and (max-width: 767px) {
+.logo img {
+	width:30px; 
+	height:30px;
+}
+.nav-link{
+  font-size: 1vw;
+}
+.btn-exit {
+    padding: 4px 6px;
+    letter-spacing: 0.5px;
+    font-size: 1vw;
+}
+#screensize {
+	margin-top:5%;
+}
+}
+ 
+ 
+ 
+ 
